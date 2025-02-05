@@ -29,7 +29,7 @@ const links = [
     { name: "Facebook", url: "https://www.facebook.com/zaid.alshaiskh" },
     { name: "Whatsapp", url: "https://wa.me/962788850531" },
     { name: "Snapchat", url: "https://snapchat.com/t/6ObtCtIF" },
-     { name: "LinkedIn", url: "https://www.linkedin.com/in/zaidalshaikh", icon: "fa-brands fa-linkedin" }
+    { name: "LinkedIn", url: "https://www.linkedin.com/in/zaidalshaikh" }
 ];
 
 // Function to generate links dynamically
