@@ -1,3 +1,27 @@
+function generateLinks() {
+    const linksContainer = document.getElementById("links");
+
+    links.forEach(link => {
+        const linkElement = document.createElement("a");
+        linkElement.href = link.url;
+
+        // Add the icon before the link text
+        const iconElement = document.createElement("i");
+        iconElement.className = `${link.icon} icon`;
+        linkElement.appendChild(iconElement);
+
+        // Add a space and the link text
+        linkElement.appendChild(document.createTextNode(` ${link.name}`));
+
+        if (link.name === "Phone") {
+            linkElement.classList.add("phone-link"); // Add a unique class for the phone number
+        } else {
+            linkElement.target = "_blank"; // Open links in a new tab (except for phone numbers)
+        }
+
+        linksContainer.appendChild(linkElement);
+    });
+}
 // Array of links with their names and URLs
 const links = [
     { name: "Phone", url: "tel:+962788850531" },
