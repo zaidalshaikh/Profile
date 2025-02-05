@@ -35,6 +35,7 @@
             to {
                 transform: translate(-50%, -50%) rotate(360deg);
             }
+            
         }
         .container {
             text-align: center;
@@ -75,6 +76,13 @@
             color: #fff;
             transform: scale(1.05);
         }
+        @keyframes shine-animation {
+    0% {
+        text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 20px #ff0, 0 0 30px #ff0, 0 0 40px #ff0; /* Bright glow */
+    }
+    100% {
+        text-shadow: 0 0 2px #fff, 0 0 5px #fff, 0 0 10px #ff0, 0 0 15px #ff0, 0 0 20px #ff0; /* Dimmer glow */
+    }
     </style>
 </head>
 <body>
