@@ -2,7 +2,7 @@
 const links = [
     { name: "Instgram", url: "https://www.instagram.com/zaidalshaikh.05/" },
     { name: "Facebook", url: "https://www.facebook.com/zaid.alshaiskh" },
-    { name: "Whatsapp", url: "wa.me/962788850531" },
+    { name: "Whatsapp", url: "https://wa.me/962788850531" },
     { name: "Snapchat", url: "https://snapchat.com/t/6ObtCtIF" },
     { name: "Linkedin", url: "http://linkedin.com/in/zaid-abdelrahim" }
 ];
