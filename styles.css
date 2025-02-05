@@ -1,3 +1,7 @@
+#links a i.icon {
+    margin-right: 10px; /* Space between the icon and text */
+    color: #FFFFFF; /* White icon color */
+}
 /* Base style for the heading */
 h1 {
     color: silver; /* Base color */
