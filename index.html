@@ -60,23 +60,29 @@
             letter-spacing: 2px;
         }
         #links a {
-            display: block;
-            background: #333;
-            color: #ACACAC;
-            padding: 10px;
-            margin: 10px 0;
-            border-radius: 5px;
-            text-decoration: none;
-            font-weight: bold;
-            box-shadow: inset 2px 2px 5px #1a1a1a, inset -2px -2px 5px #404040;
-            transition: all 0.3s ease;
-            animation: shine-animation 2s infinite alternate;
-        }
-        #links a:hover {
-            background: #444;
-            color: #fff;
-            transform: scale(1.05);
-        }
+    display: block;
+    background: #333; /* Background color of the link */
+    color: #ACACAC; /* Default text color */
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: inset 2px 2px 5px #1a1a1a, inset -2px -2px 5px #404040;
+    transition: all 0.3s ease;
+    animation: shine-animation 2s infinite alternate; /* Add the shine animation */
+}
+
+/* Hover effect */
+#links a:hover {
+    background: #444; /* Darker background on hover */
+    color: #FFFFFF; /* White text on hover */
+    transform: scale(1.05); /* Slightly enlarge the link */
+    text-shadow: 
+        0 0 5px #FFFFFF,   /* Small white glow */
+        0 0 10px #FFFFFF,  /* Medium white glow */
+        0 0 20px #FFFFFF;  /* Larger white glow */
+}
        
 
 /* Keyframes for the shining effect */
