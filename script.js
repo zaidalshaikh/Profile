@@ -1,6 +1,6 @@
 // Array of links with their names and URLs
 const links = [
-    { name: "&#128222 Phone", url: "tel:+962788850531" },
+    { name: "📞 Phone", url: "tel:+962788850531" },
     { name: "Instgram", url: "https://www.instagram.com/zaidalshaikh.05/" },
     { name: "Facebook", url: "https://www.facebook.com/zaid.alshaiskh" },
     { name: "Whatsapp", url: "https://wa.me/962788850531" },
