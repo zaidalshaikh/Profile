@@ -1,0 +1,38 @@
+/* Base style for the heading */
+h1 {
+    color: silver; /* Base color */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative; /* Required for pseudo-elements */
+    font-size: 24px; /* Adjust as needed */
+    overflow: hidden; /* Ensures the shine stays within the text bounds */
+}
+
+/* Shine effect */
+h1::before {
+    content: ""; /* Required for pseudo-elements */
+    position: absolute;
+    top: 0;
+    left: -50%; /* Start off-screen */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.8) 50%, /* Bright shine in the middle */
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-20deg); /* Adds a slanted shine effect */
+    animation: shine 2s infinite; /* Animates the shine */
+    z-index: 1; /* Ensure it's above the text */
+}
+
+/* Animation for the shine effect */
+@keyframes shine {
+    from {
+        left: -50%; /* Start off-screen */
+    }
+    to {
+        left: 150%; /* Move off-screen to the right */
+    }
+}
