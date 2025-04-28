@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zaid Alshaikh | Professional Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="gear_small.png">
+</head>
+<body>
+    <div class="gear-bg"></div>
+    <div class="small-gear small-gear-1"></div>
+    <div class="small-gear small-gear-2"></div>
+    
+    <div class="container">
+        <div class="blueprint-border"></div>
+        <div class="profile-pic-container">
+            <img src="profile.jpg" alt="Zaid Alshaikh" class="profile-pic">
+            <div class="profile-pic-border"></div>
+        </div>
+        <h1>Zaid Alshaikh</h1>
+        <div class="title">Mechanical Engineer</div>
+        <div id="links"></div>
+        <div class="footer">© 2025 Zaid Alshaikh</div>
+    </div>
+    
+    <script>
+        // Array of links with their names, URLs, and icons
+        const links = [
+            { name: "Phone", url: "tel:+962788850531", icon: "fas fa-phone" },
+            { name: "Instagram", url: "https://www.instagram.com/zaidalshaikh.05/", icon: "fab fa-instagram" },
+            { name: "Facebook", url: "https://www.facebook.com/zaid.alshaiskh", icon: "fab fa-facebook-f" },
+            { name: "WhatsApp", url: "https://wa.me/962788850531", icon: "fab fa-whatsapp" },
+            { name: "Snapchat", url: "https://snapchat.com/t/6ObtCtIF", icon: "fab fa-snapchat-ghost" },
+            { name: "LinkedIn", url: "http://linkedin.com/in/zaid-abdelrahim", icon: "fab fa-linkedin-in" }
+        ];
+
+        // Function to generate links dynamically
+        function generateLinks() {
+            const linksContainer = document.getElementById("links");
+
+            // Loop through the links array and create <a> elements
+            links.forEach(link => {
+                const linkElement = document.createElement("a");
+                linkElement.href = link.url;
+                linkElement.target = "_blank"; // Open links in a new tab
+                
+                // Add icon
+                const iconElement = document.createElement("i");
+                iconElement.className = link.icon;
+                linkElement.appendChild(iconElement);
+                
+                // Add text
+                const textNode = document.createTextNode(" " + link.name);
+                linkElement.appendChild(textNode);
+                
+                linksContainer.appendChild(linkElement);
+            });
+        }
+
+        // Call the function when the page loads
+        document.addEventListener("DOMContentLoaded", generateLinks);
+    </script>
+</body>
+</html>
